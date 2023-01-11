@@ -13,23 +13,33 @@
       .top-wrapper {
         display: flex;
         justify-content: space-between;
+        flex-flow: wrap;
       }
       .gap40 {
         height: 40px;
+      }
+      .padding-10 {
+        padding: 10px;
+      }
+
+      @media screen and (max-width: 477px) {
+        .top-wrapper {
+          justify-content: center;
+        }
+        .fiverr-seller-widget {
+          margin-bottom: 20px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="content">
       <div class="gap40"></div>
-
       <div class="top-wrapper">
-        <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
         <div
           itemscope
           itemtype="http://schema.org/Person"
           class="fiverr-seller-widget"
-          style="display: inline-block"
         >
           <a
             itemprop="url"
@@ -66,7 +76,7 @@
         ></iframe>
       </div>
       <div class="gap40"></div>
-      <div id="fiverr-widget-seller-data">
+      <div id="fiverr-widget-seller-data" class="padding-10">
         <!-- <div itemprop="name">wozblue</div> -->
         <!-- <div itemscope itemtype="http://schema.org/Organization">
           <span itemprop="name">Fiverr</span>
@@ -74,12 +84,14 @@
         <div itemprop="jobtitle">Seller</div> -->
         <div itemprop="description">
           <p>Hi all,</p>
-          I am Woz. I am a front-end developer with 5 years. My codes are
-          hand-typed and well-documented. I develop is using the latest
-          development principles and techniques to meet modern web standards. I
-          specialize in HTML5, CSS3, REACT, VUE, and FLUTTER. I would love to do
-          creative ideas to implement in the real world. I focus on 3 things for
-          every project: Communication, Quality, and Support.
+          <p>
+            I am Woz. I am a front-end developer with 5 years. My codes are
+            hand-typed and well-documented. I develop is using the latest
+            development principles and techniques to meet modern web standards.
+            I specialize in HTML5, CSS3, REACT, VUE, and FLUTTER. I would love
+            to do creative ideas to implement in the real world. I focus on 3
+            things for every project: Communication, Quality, and Support.
+          </p>
           <p>Thank you, Woz</p>
         </div>
       </div>
